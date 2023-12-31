@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>Travel Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,500;0,600;1,300&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="css/owl.carousel.min.css">
+    <link type="text/css" rel="stylesheet" href="owl.carousel.min.js">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <script src="extrenaljq.js"></script>
+     <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+    <script src="extrenaljq.js"></script> 
+    <div id="arrow">
+        <i class="fa fa-arrow-up"></i>
+    </div>
+    <nav>
+        <div class="container">
+            <div class="menu-par">
+                <div class="logo-par">
+                    <a href="index.html">
+                        <h2>Travel</h2>
+                    </a>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a class="menu-hover" href="index.html">Home</a></li>
+                        <li><a class="menu-hover" href="index.html">Travel</a></li>
+                        <li><a class="menu-hover" href="index.html">Book Now</a></li>
+                        <li><a class="menu-hover" href="index.html">Gallery</a></li>
+                        <li><a class="menu-hover" href="index.html">Holiday</a></li>
+                        <li><a class="menu-hover" href="index.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div id="toggle-btn">
+                    <i class="fa fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="header-info-par">
+                <h1 class="typewrite" data-period="2000" 
+                    data-type='["Happiness is closer",     "Adventure Awaits",    "Dont be a tourist be a traveler."]'>
+                </h1>
+                <script>
+                    const typeElement = document.querySelector('.typewrite');
+                    const typeDelay = 3000;
+                    const textArray = JSON.parse(typeElement.getAttribute('data-type'));
+                    let textIndex = 0;
+                    let charIndex = 0;
+                
+                    function type() {
+                      if (charIndex < textArray[textIndex].length) {
+                        typeElement.innerHTML += textArray[textIndex].charAt(charIndex);
+                        charIndex++;
+        setTimeout(type, 50); // Adjust typing speed if needed
+      } else {
+        setTimeout(erase, typeDelay);
+      }
+    }
+
+    function erase() {
+      if (charIndex > 0) {
+        typeElement.innerHTML = textArray[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, 30); // Adjust erasing speed if needed
+      } else {
+        textIndex = (textIndex + 1) % textArray.length;
+        setTimeout(type, 500); // Pause before typing the next message
+      }
+    }
+
+    type(); // Start the typing effect
+  </script>
+                <p style="font-family: Arial, sans-serif; font-size: 20px;">Discover, Travel, Repeat: Your Next Escape Begins Now </p>
+                <a href="#" class="a">Read More</a>
+            </div>
+            <div class="video">
+                <video id="video" autoplay loop muted>
+                    <source src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\travel-video.mp4"/>
+                </video>
+            </div>
+        </div>
+    </header>
+    <!-- Second Slides Section -->
+    <section id="welcome-text">
+        <div class="container">
+            <h2>MOST POPULAR TOURS</h2>
+            <p>when an unknown printer took a gallery of type and scrambled it to make a type speicmen</p>
+        </div>
+    </section>
+    <!-- Slides Section Start-->
+    <section id="slides-par">
+        <div class="container">
+            <div class="slides">
+                <div class="slide_1 slide_2">
+                    <div class="slide-info" >
+                        <p>Switzeland</p>
+                        
+    
+                    </div>
+                </div>
+                <div class="slide_1 slide_3">
+                    <div class="slide-info">
+                        <p>Rome to Venice</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_4">
+                    <div class="slide-info">
+                        <p>Srilanka one life</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_5">
+                    <div class="slide-info">
+                        <p>Bali</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_6">
+                    <div class="slide-info">
+                        <p>Small group wines</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_7">
+                    <div class="slide-info">
+                        <p>Greece, Italy</p>
+                    </div>
+                </div>
+                <div class="slide_1 slide_8">
+                    <div class="slide-info">
+                        <p>Nadi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Slides Section Start-->
+
+    <!-- Book Now Section Start -->
+    <section id="book">
+        <div class="container">
+            <div class="book-content-par">
+                <div class="book-counter">
+                    <h3>Book Now</h3>
+                    <div id="clockdiv">
+                        <div>
+                            <span class="days"></span>
+                            <div class="smalltext">Days</div>
+
+                        </div>
+                        <div>
+                            <span class="hours"></span>
+                            <div class="smalltext">Hours</div>
+
+                        </div>
+                        <div>
+                            <span class="minutes"></span>
+                            <div class="smalltext">Minutes</div>
+
+                        </div>
+                        <div>
+                            <span class="seconds"></span>
+                            <div class="smalltext">Seconds</div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="book-form">
+                    <form>
+                        <input type="text" id="fname" name="firstname" placeholder="Your Name...">
+                        <input type="text" id="lname" name="lastname" placeholder="Your Last Name...">
+                        <select name="country" id="country">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="india">USA</option>
+                        </select>
+                        <textarea name="subject" id="subject" placeholder="Write something..."
+                            style="height: 200px;"></textarea>
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script>
+            function getTimeRemaining(endtime) {
+    var t = Date.parse(endtime) - Date.parse(new Date());
+    var seconds = Math.floor((t / 1000) % 60);
+    var minutes = Math.floor((t / 1000 / 60) % 60);
+    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+    return {
+        'total': t,
+        'days': days,
+        'hours': hours,
+        'minutes': minutes,
+        'seconds': seconds
+    };
+}
+
+function initializeClock(id, endtime) {
+    var clock = document.getElementById(id);
+    var daysSpan = clock.querySelector('.days');
+    var hoursSpan = clock.querySelector('.hours');
+    var minutesSpan = clock.querySelector('.minutes');
+    var secondsSpan = clock.querySelector('.seconds');
+
+    function updateClock() {
+        var t = getTimeRemaining(endtime);
+
+        daysSpan.innerHTML = t.days;
+        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+
+        if (t.total <= 0) {
+            clearInterval(timeinterval);
+        }
+    }
+
+    updateClock();
+    var timeinterval = setInterval(updateClock, 1000);
+}
+
+var deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
+initializeClock('clockdiv', deadline);
+        </script>
+    </section>
+    <!-- Book Now Section End -->
+
+    <!-- Gallery Section Starts -->
+    <section id="gallery">
+        <div class="container">
+            <div class="row">
+                <div align="center" class="filter-btn-par">
+                    <button class="filter-button" data-filter="all">ALL</button>
+                    <button class="filter-button" data-filter="diving">DIVING</button>
+                    <button class="filter-button" data-filter="nature">NATURE</button>
+                    <button class="filter-button" data-filter="health">HEALTH</button>
+                </div>
+                <div class="filter-gal-par">
+                    <div class="gallery-item filter diving">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\fiji-surprise\diving1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter diving">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\fiji-surprise\diving2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter diving">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\fiji-surprise\diving3.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter health">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\fiji-surprise\health1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter health">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\fiji-surprise\health2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter nature">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\fiji-surprise\nature1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter nature">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\fiji-surprise\nature2.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="gallery-item filter nature">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\fiji-surprise\nature3.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section Ends -->
+
+    <!-- Mutiple Slider Section Starts -->
+    <section id="water-slider">
+        <div class="container">
+            <h3>Our exotic places</h3>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\slider\bangcok.jpg" alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Bangkok</h3>
+                            <p>THAILAND</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\slider\cario.jpg" alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Rome</h3>
+                            <p>ITALY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\slider\dubai.jpg" alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Cairo</h3>
+                            <p>EGYPT</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\slider\nassau.jpg"alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Dubai</h3>
+                            <p>EMIRATES</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="owl-img-par">
+                        <img src="C:\Users\aarth\OneDrive\Desktop\aarthi\project\travel2\images\slider\Rome.jpg" alt="" class="img-responsive" />
+                        <div class="owl-img-info">
+                            <h3>Nassau</h3>
+                            <p>BAHAMAS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 10,
+
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 2500,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 3
+        },
+        1000: {
+            items: 4
+        }
+    }
+});
+</script>
+    </section>
+    <!-- Blog Section Starts -->
+    <section class="destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="destination-card">
+                <img src="https://www.honeymoonbug.com/blog/wp-content/uploads/2020/01/Kurumba-Beach-Maldives.jpg" style="height: 170px; width: 350px;" alt="Destination 1">
+                <h3>Beach Paradise</h3>
+                <p>Explore stunning beaches and crystal-clear waters.</p>
+            </div>
+            <div class="destination-card">
+                <img src="https://www.hdwallpapers.in/download/village_near_alps_lake_around_mountain_panorama_switzerland_hd_travel-HD.jpg" alt="Destination 2">
+                <h3>Mountain Retreat</h3>
+                <p>Experience breathtaking mountain vistas and hiking trails.</p>
+            </div>
+            <!-- Add more destination cards as needed -->
+        </section>
+    
+        <section class="tours">
+            <h2>Featured Tours</h2>
+            <div class="tour-card">
+                <a href="islandgateway.html">
+               <img src="https://i2.wp.com/travelfriendship.com/wp-content/uploads/2017/01/fresh-nuance-of-the-tropical-islands-caribbean-that-has-beautiful-scenery-arround-the-resort-that-make-it-seems-nice-with-wooden-furniture-arround-the-house-design.jpg?w=1600&ssl=1" alt="Tour 1">
+                <h3>Island Getaway</h3>
+                <p>Relax and unwind on a tropical island paradise.</p>
+                <span class="price">$1299</span>
+            </a>
+            </div>
+            <div class="tour-card">
+                <img src="https://www.holidify.com/images/cmsuploads/compressed/india-148045726738o_20190207000651.jpg" alt="Tour 2">
+                <h3>Cultural Exploration</h3>
+                <p>Immerse yourself in the rich cultures of distant lands.</p>
+                <span class="price">$1599</span>
+            </div>
+            <!-- Add more tour cards as needed -->
+        </section>
+ 
+
+
+</body>
+
+
+   
